@@ -4,19 +4,43 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>bluekoru</title>
+  <link rel="preload" as="image" type="image/webp"
+        imagesrcset="img/hero-1280.webp 1280w, img/hero-1920.webp 1920w, img/hero-2560.webp 2560w"
+        imagesizes="max(100vw, 133.34vh)">
   <style>
-    :root { --bg: #f7f9fc; --fg: #0b2545; }
-    @media (prefers-color-scheme: dark) { :root { --bg: #0b1320; --fg: #cfe3ff; } }
+    :root { --ink: #356f8e; }
     html, body { height: 100%; margin: 0; }
-    body {
-      display: grid; place-items: center;
-      background: var(--bg); color: var(--fg);
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    body { background: #c3cde6; overflow: hidden; }
+    .hero { position: fixed; inset: 0; }
+    .hero img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      object-position: 62% 50%;
+      display: block;
     }
-    h1 { font-weight: 300; font-size: clamp(2.5rem, 10vw, 6rem); letter-spacing: 0.05em; margin: 0; }
+    h1 {
+      position: fixed; left: 0; right: 0; top: 3.5vh;
+      margin: 0; text-align: center;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      font-size: clamp(3.5rem, min(14vw, 14vh), 9rem);
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      color: var(--ink);
+      text-shadow: 0 0 1.2em rgba(255, 255, 255, 0.45);
+    }
+    h1 b { font-weight: 800; }
   </style>
 </head>
 <body>
-  <h1>bluekoru</h1>
+  <picture class="hero">
+    <source type="image/webp"
+            srcset="img/hero-1280.webp 1280w, img/hero-1920.webp 1920w, img/hero-2560.webp 2560w"
+            sizes="max(100vw, 133.34vh)">
+    <img src="img/hero-1920.jpg"
+         srcset="img/hero-1280.jpg 1280w, img/hero-1920.jpg 1920w, img/hero-2560.jpg 2560w"
+         sizes="max(100vw, 133.34vh)"
+         alt="Orange harakeke flowers in front of the sea at Karikari">
+  </picture>
+  <h1>blue<b>koru</b></h1>
 </body>
 </html>
