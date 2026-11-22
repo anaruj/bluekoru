@@ -15,7 +15,7 @@
       "y": 3.5,
       "focus": "62% 50%",
       "glow": "light",
-      "place": "Karikari, NZ"
+      "place": "Karikari, New Zealand"
     },
     {
       "id": "alaska-snow-20191030",
@@ -32,7 +32,7 @@
       "y": 72.0,
       "focus": "50% 50%",
       "glow": "light",
-      "place": "Fairbanks, US"
+      "place": "Fairbanks, Alaska"
     },
     {
       "id": "blackadder-20250628",
@@ -49,7 +49,7 @@
       "y": 76.0,
       "focus": "50% 50%",
       "glow": "dark",
-      "place": "Scottish Borders, UK"
+      "place": "Blackadder, Scotland"
     },
     {
       "id": "edinburgh-sunset-20200808",
@@ -66,7 +66,7 @@
       "y": 76.0,
       "focus": "50% 50%",
       "glow": "dark",
-      "place": "Edinburgh, UK"
+      "place": "Edinburgh, Scotland"
     },
     {
       "id": "helena-bay-cycle-20201023",
@@ -83,7 +83,7 @@
       "y": 10.0,
       "focus": "50% 50%",
       "glow": "light",
-      "place": "Helena Bay, NZ"
+      "place": "Helena Bay, New Zealand"
     },
     {
       "id": "manhattan-20250620",
@@ -100,7 +100,7 @@
       "y": 34.4,
       "focus": "50% 50%",
       "glow": "dark",
-      "place": "New York, US"
+      "place": "Manhattan, New York"
     },
     {
       "id": "munich-market-20191012",
@@ -116,7 +116,7 @@
       "y": 76.0,
       "focus": "85% 36%",
       "glow": "dark",
-      "place": "Munich, DE",
+      "place": "Munich, Germany",
       "crop_right": 0.16
     },
     {
@@ -133,7 +133,7 @@
       "y": 76.0,
       "focus": "50% 50%",
       "glow": "dark",
-      "place": "Nikko, JP"
+      "place": "Nikko, Japan"
     },
     {
       "id": "oakura-sunrise-20201024",
@@ -150,7 +150,7 @@
       "y": 10.0,
       "focus": "50% 50%",
       "glow": "dark",
-      "place": "Ōakura, NZ"
+      "place": "Ōakura, New Zealand"
     },
     {
       "id": "paihia-bays-20201110",
@@ -167,7 +167,7 @@
       "y": 76.0,
       "focus": "50% 50%",
       "glow": "dark",
-      "place": "Paihia, NZ"
+      "place": "Paihia, New Zealand"
     },
     {
       "id": "paihia-te-haumi-20201120",
@@ -184,7 +184,7 @@
       "y": 76.0,
       "focus": "50% 50%",
       "glow": "dark",
-      "place": "Te Haumi, NZ"
+      "place": "Te Haumi, New Zealand"
     },
     {
       "id": "puketi-forest-20201121",
@@ -201,7 +201,7 @@
       "y": 76.0,
       "focus": "50% 50%",
       "glow": "dark",
-      "place": "Puketī, NZ"
+      "place": "Puketī, New Zealand"
     },
     {
       "id": "san-deago-20230207",
@@ -218,7 +218,7 @@
       "y": 76.0,
       "focus": "50% 50%",
       "glow": "dark",
-      "place": "San Diego, US"
+      "place": "San Diego, California"
     },
     {
       "id": "tokyo-yakatori-20190828",
@@ -235,7 +235,7 @@
       "y": 1.7,
       "focus": "50% 50%",
       "glow": "dark",
-      "place": "Tokyo, JP"
+      "place": "Tokyo, Japan"
     },
     {
       "id": "wellington-night-20210412",
@@ -252,7 +252,7 @@
       "y": 1.7,
       "focus": "50% 50%",
       "glow": "dark",
-      "place": "Wellington, NZ"
+      "place": "Wellington, New Zealand"
     }
   ]
 }
