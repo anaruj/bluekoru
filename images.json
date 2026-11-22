@@ -1,0 +1,258 @@
+{
+  "images": [
+    {
+      "id": "karikari-harakeke-20201128",
+      "alt": "Orange harakeke flowers in front of the sea at Karikari",
+      "base": "img/karikari-harakeke-20201128",
+      "widths": [
+        1280,
+        1920,
+        2560
+      ],
+      "aspect": 1.3333,
+      "ink": "#285a78",
+      "fire": "#cc3e0b",
+      "y": 3.5,
+      "focus": "62% 50%",
+      "glow": "light",
+      "place": "Karikari, NZ"
+    },
+    {
+      "id": "alaska-snow-20191030",
+      "alt": "Snow-covered landscape in Alaska",
+      "base": "img/alaska-snow-20191030",
+      "widths": [
+        1280,
+        1920,
+        2560
+      ],
+      "aspect": 1.3333,
+      "ink": "#272622",
+      "fire": "#6b6865",
+      "y": 72.0,
+      "focus": "50% 50%",
+      "glow": "light",
+      "place": "Fairbanks, US"
+    },
+    {
+      "id": "blackadder-20250628",
+      "alt": "A mossy woodland stream at Blackadder",
+      "base": "img/blackadder-20250628",
+      "widths": [
+        1280,
+        1920,
+        2560
+      ],
+      "aspect": 0.752,
+      "ink": "#eef5d4",
+      "fire": "#dfec8b",
+      "y": 76.0,
+      "focus": "50% 50%",
+      "glow": "dark",
+      "place": "Scottish Borders, UK"
+    },
+    {
+      "id": "edinburgh-sunset-20200808",
+      "alt": "Sunset over Edinburgh",
+      "base": "img/edinburgh-sunset-20200808",
+      "widths": [
+        1280,
+        1920,
+        2560
+      ],
+      "aspect": 1.3333,
+      "ink": "#f9c78d",
+      "fire": "#ffc2c2",
+      "y": 76.0,
+      "focus": "50% 50%",
+      "glow": "dark",
+      "place": "Edinburgh, UK"
+    },
+    {
+      "id": "helena-bay-cycle-20201023",
+      "alt": "Cycling at Helena Bay",
+      "base": "img/helena-bay-cycle-20201023",
+      "widths": [
+        1280,
+        1920,
+        2560
+      ],
+      "aspect": 1.3333,
+      "ink": "#165dba",
+      "fire": "#435918",
+      "y": 10.0,
+      "focus": "50% 50%",
+      "glow": "light",
+      "place": "Helena Bay, NZ"
+    },
+    {
+      "id": "manhattan-20250620",
+      "alt": "Manhattan",
+      "base": "img/manhattan-20250620",
+      "widths": [
+        1280,
+        1920,
+        2560
+      ],
+      "aspect": 1.3298,
+      "ink": "#88ade9",
+      "fire": "#ced5b1",
+      "y": 34.4,
+      "focus": "50% 50%",
+      "glow": "dark",
+      "place": "New York, US"
+    },
+    {
+      "id": "munich-market-20191012",
+      "alt": "Market in Munich",
+      "base": "img/munich-market-20191012",
+      "widths": [
+        1280,
+        1920
+      ],
+      "aspect": 0.63,
+      "ink": "#dea62c",
+      "fire": "#f7ece5",
+      "y": 76.0,
+      "focus": "85% 36%",
+      "glow": "dark",
+      "place": "Munich, DE",
+      "crop_right": 0.16
+    },
+    {
+      "id": "nikko-shrine-20190901",
+      "alt": "Shrine at Nikko",
+      "base": "img/nikko-shrine-20190901",
+      "widths": [
+        1280,
+        1920
+      ],
+      "aspect": 0.75,
+      "ink": "#99b3a9",
+      "fire": "#d7ee46",
+      "y": 76.0,
+      "focus": "50% 50%",
+      "glow": "dark",
+      "place": "Nikko, JP"
+    },
+    {
+      "id": "oakura-sunrise-20201024",
+      "alt": "Sunrise at Ōakura",
+      "base": "img/oakura-sunrise-20201024",
+      "widths": [
+        1280,
+        1920,
+        2560
+      ],
+      "aspect": 1.3333,
+      "ink": "#a1abbc",
+      "fire": "#d37234",
+      "y": 10.0,
+      "focus": "50% 50%",
+      "glow": "dark",
+      "place": "Ōakura, NZ"
+    },
+    {
+      "id": "paihia-bays-20201110",
+      "alt": "Bays near Paihia",
+      "base": "img/paihia-bays-20201110",
+      "widths": [
+        1280,
+        1920,
+        2560
+      ],
+      "aspect": 1.3333,
+      "ink": "#a3b8bc",
+      "fire": "#dfddda",
+      "y": 76.0,
+      "focus": "50% 50%",
+      "glow": "dark",
+      "place": "Paihia, NZ"
+    },
+    {
+      "id": "paihia-te-haumi-20201120",
+      "alt": "Te Haumi near Paihia",
+      "base": "img/paihia-te-haumi-20201120",
+      "widths": [
+        1280,
+        1920,
+        2560
+      ],
+      "aspect": 1.3333,
+      "ink": "#c3d7c5",
+      "fire": "#307550",
+      "y": 76.0,
+      "focus": "50% 50%",
+      "glow": "dark",
+      "place": "Te Haumi, NZ"
+    },
+    {
+      "id": "puketi-forest-20201121",
+      "alt": "Puketī Forest",
+      "base": "img/puketi-forest-20201121",
+      "widths": [
+        1280,
+        1920,
+        2560
+      ],
+      "aspect": 1.3333,
+      "ink": "#dbe69d",
+      "fire": "#b1b775",
+      "y": 76.0,
+      "focus": "50% 50%",
+      "glow": "dark",
+      "place": "Puketī, NZ"
+    },
+    {
+      "id": "san-deago-20230207",
+      "alt": "San Diego",
+      "base": "img/san-deago-20230207",
+      "widths": [
+        1280,
+        1920,
+        2560
+      ],
+      "aspect": 1.3298,
+      "ink": "#ffffff",
+      "fire": "#ffdd35",
+      "y": 76.0,
+      "focus": "50% 50%",
+      "glow": "dark",
+      "place": "San Diego, US"
+    },
+    {
+      "id": "tokyo-yakatori-20190828",
+      "alt": "Yakitori stall in Tokyo",
+      "base": "img/tokyo-yakatori-20190828",
+      "widths": [
+        1280,
+        1920,
+        2560
+      ],
+      "aspect": 0.75,
+      "ink": "#6cb7de",
+      "fire": "#e4d446",
+      "y": 1.7,
+      "focus": "50% 50%",
+      "glow": "dark",
+      "place": "Tokyo, JP"
+    },
+    {
+      "id": "wellington-night-20210412",
+      "alt": "Wellington at night",
+      "base": "img/wellington-night-20210412",
+      "widths": [
+        1280,
+        1920,
+        2560
+      ],
+      "aspect": 1.3333,
+      "ink": "#b0bece",
+      "fire": "#e8cc74",
+      "y": 1.7,
+      "focus": "50% 50%",
+      "glow": "dark",
+      "place": "Wellington, NZ"
+    }
+  ]
+}

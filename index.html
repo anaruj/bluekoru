@@ -4,43 +4,92 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>bluekoru</title>
-  <link rel="preload" as="image" type="image/webp"
-        imagesrcset="img/hero-1280.webp 1280w, img/hero-1920.webp 1920w, img/hero-2560.webp 2560w"
-        imagesizes="max(100vw, 133.34vh)">
   <style>
-    :root { --ink: #285a78; --fire: #cc3e0b; }
+    :root { --ink: #285a78; --fire: #cc3e0b; --y: 3.5vh; --glow: 0 0 1.2em rgba(255,255,255,.45); }
     html, body { height: 100%; margin: 0; }
     body { background: #c3cde6; overflow: hidden; }
     .hero { position: fixed; inset: 0; }
-    .hero img {
-      width: 100%; height: 100%;
-      object-fit: cover;
-      object-position: 62% 50%;
-      display: block;
-    }
-    h1 {
-      position: fixed; left: 0; right: 0; top: 3.5vh;
-      margin: 0; text-align: center;
+    .hero img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .mark {
+      position: fixed; left: 0; right: 0; top: var(--y);
+      text-align: center;
       font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
       font-size: clamp(3.5rem, min(14vw, 14vh), 9rem);
-      font-weight: 400;
+    }
+    /* shrink-to-fit, so the caption can right-align to the end of "koru" */
+    .inner { display: inline-block; text-align: right; }
+    h1 {
+      margin: 0; font-size: inherit; font-weight: 400;
       letter-spacing: 0.02em;
       color: var(--ink);
-      text-shadow: 0 0 1.2em rgba(255, 255, 255, 0.45);
+      text-shadow: var(--glow);
     }
     h1 b { font-weight: inherit; color: var(--fire); }
+    .place {
+      /* top: pull up under the wordmark's line box; right: .09em of this size = the wordmark's trailing letter-spacing */
+      margin: -1.1em .09em 0 0;
+      font-size: .22em; font-style: italic;
+      color: var(--fire);
+      text-shadow: var(--glow);
+    }
+    .place:empty { display: none; }
+    /* hold everything back until the chosen photo and its colours are ready */
+    .hero, .mark { opacity: 0; transition: opacity .5s ease; }
+    .ready .hero, .ready .mark { opacity: 1; }
+    .still .hero, .still .mark { transition: none; }
   </style>
+  <noscript>
+    <style>.hero, .mark { opacity: 1; } .hero img { object-position: 62% 50%; }</style>
+  </noscript>
 </head>
 <body>
-  <picture class="hero">
-    <source type="image/webp"
-            srcset="img/hero-1280.webp 1280w, img/hero-1920.webp 1920w, img/hero-2560.webp 2560w"
-            sizes="max(100vw, 133.34vh)">
-    <img src="img/hero-1920.jpg"
-         srcset="img/hero-1280.jpg 1280w, img/hero-1920.jpg 1920w, img/hero-2560.jpg 2560w"
-         sizes="max(100vw, 133.34vh)"
-         alt="Orange harakeke flowers in front of the sea at Karikari">
+  <picture class="hero" id="hero">
+    <noscript>
+      <img src="img/karikari-harakeke-20201128-1920.webp"
+           alt="Orange harakeke flowers in front of the sea at Karikari">
+    </noscript>
   </picture>
-  <h1>blue<b>koru</b></h1>
+  <div class="mark"><div class="inner">
+    <h1>blue<b>koru</b></h1>
+    <p class="place" id="place"></p>
+  </div></div>
+  <script>
+    (async () => {
+      const root = document.documentElement;
+      if (new URLSearchParams(location.search).has('still')) root.classList.add('still');
+      const ready = () => root.classList.add('ready');
+      try {
+        const all = (await (await fetch('images.json')).json()).images;
+        const wanted = new URLSearchParams(location.search).get('img');
+        let pick = wanted && all.find(i => i.id === wanted);
+        if (!pick) {
+          const live = all.filter(i => !i.draft);
+          let last = null;
+          try { last = localStorage.getItem('last'); } catch {}
+          const pool = live.length > 1 ? live.filter(i => i.id !== last) : live;
+          pick = pool[Math.floor(Math.random() * pool.length)];
+          try { localStorage.setItem('last', pick.id); } catch {}
+        }
+        const glows = {
+          light: '0 0 1.2em rgba(255,255,255,.45)',
+          dark: '0 0 1.2em rgba(0,0,0,.45)',
+          none: 'none'
+        };
+        document.getElementById('place').textContent = pick.place || '';
+        root.style.setProperty('--ink', pick.ink);
+        root.style.setProperty('--fire', pick.fire);
+        root.style.setProperty('--y', pick.y + 'vh');
+        root.style.setProperty('--glow', glows[pick.glow] || glows.none);
+        const img = new Image();
+        img.onload = img.onerror = ready;
+        img.alt = pick.alt;
+        img.sizes = `max(100vw, ${(pick.aspect * 100).toFixed(2)}vh)`;
+        img.srcset = pick.widths.map(w => `${pick.base}-${w}.webp ${w}w`).join(', ');
+        img.style.objectPosition = pick.focus;
+        const hero = document.getElementById('hero');
+        hero.replaceChildren(img);
+      } catch (e) { ready(); }
+    })();
+  </script>
 </body>
 </html>
