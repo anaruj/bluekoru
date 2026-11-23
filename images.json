@@ -196,8 +196,8 @@
         2560
       ],
       "aspect": 1.3333,
-      "ink": "#dbe69d",
-      "fire": "#b1b775",
+      "ink": "#b1b775",
+      "fire": "#dbe69d",
       "y": 76.0,
       "focus": "50% 50%",
       "glow": "dark",
