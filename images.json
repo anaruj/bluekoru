@@ -29,7 +29,7 @@
       "aspect": 1.3333,
       "ink": "#272622",
       "fire": "#6b6865",
-      "y": 72.0,
+      "y": 76.0,
       "focus": "50% 50%",
       "glow": "light",
       "place": "Fairbanks, Alaska"
@@ -80,7 +80,7 @@
       "aspect": 1.3333,
       "ink": "#165dba",
       "fire": "#435918",
-      "y": 10.0,
+      "y": 3.5,
       "focus": "50% 50%",
       "glow": "light",
       "place": "Helena Bay, New Zealand"
@@ -97,7 +97,7 @@
       "aspect": 1.3298,
       "ink": "#88ade9",
       "fire": "#ced5b1",
-      "y": 34.4,
+      "y": 3.5,
       "focus": "50% 50%",
       "glow": "dark",
       "place": "Manhattan, New York"
@@ -147,7 +147,7 @@
       "aspect": 1.3333,
       "ink": "#a1abbc",
       "fire": "#d37234",
-      "y": 10.0,
+      "y": 3.5,
       "focus": "50% 50%",
       "glow": "dark",
       "place": "Ōakura, New Zealand"
@@ -232,7 +232,7 @@
       "aspect": 0.75,
       "ink": "#6cb7de",
       "fire": "#e4d446",
-      "y": 1.7,
+      "y": 3.5,
       "focus": "50% 50%",
       "glow": "dark",
       "place": "Tokyo, Japan"
@@ -249,7 +249,7 @@
       "aspect": 1.3333,
       "ink": "#b0bece",
       "fire": "#e8cc74",
-      "y": 1.7,
+      "y": 3.5,
       "focus": "50% 50%",
       "glow": "dark",
       "place": "Wellington, New Zealand"
