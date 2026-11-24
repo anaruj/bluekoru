@@ -321,6 +321,57 @@
       "focus": "50% 50%",
       "glow": "light",
       "place": "Karikari, New Zealand"
+    },
+    {
+      "id": "auckland-mahjong-0210401",
+      "alt": "auckland mahjong 0210401",
+      "base": "img/auckland-mahjong-0210401",
+      "widths": [
+        1280,
+        1920,
+        2560
+      ],
+      "aspect": 1.3333,
+      "ink": "#17327f",
+      "fire": "#7b0001",
+      "y": 76.0,
+      "focus": "50% 50%",
+      "glow": "dark",
+      "place": "Auckland, New Zealand"
+    },
+    {
+      "id": "nelson-moasic-20261124",
+      "alt": "nelson moasic 20261124",
+      "base": "img/nelson-moasic-20261124",
+      "widths": [
+        1280,
+        1920,
+        2560
+      ],
+      "aspect": 1.3323,
+      "ink": "#cf5d1c",
+      "fire": "#000215",
+      "y": 3.5,
+      "focus": "50% 50%",
+      "glow": "light",
+      "place": "Nelson, New Zealand"
+    },
+    {
+      "id": "manaweka-forest-20210114",
+      "alt": "manaweka forest 20210114",
+      "base": "img/manaweka-forest-20210114",
+      "widths": [
+        1280,
+        1920,
+        2560
+      ],
+      "aspect": 1.3333,
+      "ink": "#8db732",
+      "fire": "#dfda7c",
+      "y": 3.5,
+      "focus": "50% 50%",
+      "glow": "dark",
+      "place": "Mangaweka, New Zealand"
     }
   ]
 }
