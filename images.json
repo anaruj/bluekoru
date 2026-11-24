@@ -196,7 +196,7 @@
         2560
       ],
       "aspect": 1.3333,
-      "ink": "#010101",
+      "ink": "#f0ebd7",
       "fire": "#dbe69d",
       "y": 76.0,
       "focus": "50% 50%",
@@ -253,6 +253,74 @@
       "focus": "50% 50%",
       "glow": "dark",
       "place": "Wellington, New Zealand"
+    },
+    {
+      "id": "kyoto-pond-20190830",
+      "alt": "kyoto pond 20190830",
+      "base": "img/kyoto-pond-20190830",
+      "widths": [
+        1280,
+        1920,
+        2560
+      ],
+      "aspect": 1.3333,
+      "ink": "#aaca90",
+      "fire": "#c9a88a",
+      "y": 76.0,
+      "focus": "50% 50%",
+      "glow": "dark",
+      "place": "Kyoto, Japan"
+    },
+    {
+      "id": "seattle-autunm-20191020",
+      "alt": "seattle autunm 20191020",
+      "base": "img/seattle-autunm-20191020",
+      "widths": [
+        1280,
+        1920,
+        2560
+      ],
+      "aspect": 1.3333,
+      "ink": "#d06e89",
+      "fire": "#150d10",
+      "y": 76.0,
+      "focus": "50% 50%",
+      "glow": "dark",
+      "place": "Seattle, Washington"
+    },
+    {
+      "id": "edinburgh-books-20200119",
+      "alt": "edinburgh books 20200119",
+      "base": "img/edinburgh-books-20200119",
+      "widths": [
+        1280,
+        1920,
+        2560
+      ],
+      "aspect": 1.3333,
+      "ink": "#4987e2",
+      "fire": "#e9cbb9",
+      "y": 76.0,
+      "focus": "50% 50%",
+      "glow": "dark",
+      "place": "Edinburgh, Scotland"
+    },
+    {
+      "id": "karikari-beach-20201126",
+      "alt": "karikari beach 20201126",
+      "base": "img/karikari-beach-20201126",
+      "widths": [
+        1280,
+        1920,
+        2560
+      ],
+      "aspect": 1.3333,
+      "ink": "#4987e2",
+      "fire": "#775a38",
+      "y": 3.5,
+      "focus": "50% 50%",
+      "glow": "light",
+      "place": "Karikari, New Zealand"
     }
   ]
 }
