@@ -306,6 +306,8 @@ def cmd_add(a):
     out = render_preview(id_)
     if out:
         print(f"  preview {out}")
+    if not existing and not a.alt:
+        print(f"  note: alt text is a filename placeholder; set it with: tune {id_} --alt '...'")
     if entry["aspect"] < 1:
         print("  note: portrait photo; expect heavy cropping on landscape screens")
 
