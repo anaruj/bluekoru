@@ -68,12 +68,12 @@
           const live = all.filter(i => !i.draft);
           const ids = live.map(i => i.id);
           const DAY = 24 * 60 * 60 * 1000;
-          let bag = [], last = null;
+          let bag = [], recent = [];
           try {
             const s = JSON.parse(localStorage.getItem('bag'));
             if (s && Date.now() - s.at < DAY) {
               bag = s.queue.filter(id => ids.includes(id));
-              last = s.last;
+              recent = (s.recent || []).filter(id => ids.includes(id));
             }
           } catch {}
           if (!bag.length) {
@@ -82,14 +82,15 @@
               const j = Math.floor(Math.random() * (n + 1));
               [bag[n], bag[j]] = [bag[j], bag[n]];
             }
-            // don't open the new round with the image that ended the last one
-            if (bag.length > 1 && bag[bag.length - 1] === last) {
-              [bag[0], bag[bag.length - 1]] = [bag[bag.length - 1], bag[0]];
-            }
+            // the bag is used from the end, so move the images that closed the
+            // last round to the front: they come round again as late as possible
+            bag = [...bag.filter(id => recent.includes(id)), ...bag.filter(id => !recent.includes(id))];
           }
           const id = bag.pop();
           pick = live.find(i => i.id === id);
-          try { localStorage.setItem('bag', JSON.stringify({ queue: bag, last: id, at: Date.now() })); } catch {}
+          // remember the last half-set shown, for the next shuffle
+          recent = [...recent.filter(r => r !== id), id].slice(-Math.floor(ids.length / 2));
+          try { localStorage.setItem('bag', JSON.stringify({ queue: bag, recent, at: Date.now() })); } catch {}
         }
         const glows = {
           light: '0 0 1.2em rgba(255,255,255,.45)',
