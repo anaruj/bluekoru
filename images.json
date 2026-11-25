@@ -372,6 +372,23 @@
       "focus": "50% 50%",
       "glow": "dark",
       "place": "Mangaweka, New Zealand"
+    },
+    {
+      "id": "ngakuta-bay-20210218",
+      "alt": "ngakuta bay 20210218",
+      "base": "img/ngakuta-bay-20210218",
+      "widths": [
+        1280,
+        1920,
+        2560
+      ],
+      "aspect": 1.3333,
+      "ink": "#074fac",
+      "fire": "#405625",
+      "y": 3.5,
+      "focus": "50% 50%",
+      "glow": "light",
+      "place": "Ngākuta Bay, New Zealand"
     }
   ]
 }
