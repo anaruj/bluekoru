@@ -34,6 +34,7 @@ PREVIEWS = ROOT / "previews"
 WIDTHS = [1280, 1920, 2560]
 VIEWPORTS = [("desktop", 1920, 1080), ("tablet", 820, 1180), ("phone", 390, 844)]
 GLOWS = ("light", "dark", "none")
+Y_POSITIONS = (3.5, 76.0)  # wordmark top, in vh: top or bottom of the screen
 
 
 # ---------- manifest ----------
@@ -117,15 +118,17 @@ def propose(im):
     gy, gx = np.gradient(grey)
     busy = np.hypot(gx, gy)
 
-    # text sits in roughly the central 60% of the width and ~16% of the height
+    # text sits in roughly the central 60% of the width and ~16% of the height;
+    # the wordmark goes in one of two standard positions, whichever band is calmer
     band_h, x0, x1 = 29, 64, 256
-    best = None
-    for top in range(3, 100):
+
+    def score(y):
+        top = round(y / 100 * 180)
         sl = (slice(top, top + band_h), slice(x0, x1))
-        score = busy[sl].mean() + 0.4 * grey[sl].std() + 0.03 * top
-        if best is None or score < best[0]:
-            best = (score, top)
-    top = best[1]
+        return busy[sl].mean() + 0.4 * grey[sl].std()
+
+    y = min(Y_POSITIONS, key=score)
+    top = round(y / 100 * 180)
     bg = arr[top:top + band_h, x0:x1].reshape(-1, 3).mean(axis=0)
 
     # dominant colours of the whole view
@@ -164,7 +167,7 @@ def propose(im):
     return {
         "ink": hexc(ink),
         "fire": hexc(fire),
-        "y": round(top / 180 * 100, 1),
+        "y": y,
         "focus": "50% 50%",
         "glow": glow,
     }

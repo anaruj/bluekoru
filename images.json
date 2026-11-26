@@ -96,7 +96,7 @@
       ],
       "aspect": 1.3298,
       "ink": "#83aaeb",
-      "fire": "#ced5b1",
+      "fire": "#ffffff",
       "y": 76.0,
       "focus": "50% 50%",
       "glow": "dark",
@@ -432,10 +432,10 @@
         2560
       ],
       "aspect": 1.3333,
-      "ink": "#acc1b1",
+      "ink": "#152602",
       "fire": "#d5d6cb",
       "y": 76.0,
-      "focus": "50% 50%",
+      "focus": "50% 0%",
       "glow": "dark",
       "place": "Auckland, New Zealand"
     }
