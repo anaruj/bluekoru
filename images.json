@@ -454,7 +454,24 @@
       "y": 76.0,
       "focus": "50% 50%",
       "glow": "dark",
-      "place": "Cambridge, UK"
+      "place": "Cambridge, England"
+    },
+    {
+      "id": "blackadder-cottage-20251011",
+      "alt": "The Blackadder water passing the old Blackadder cottage in the Scottish borders",
+      "base": "img/blackadder-cottage-20251011",
+      "widths": [
+        1280,
+        1920,
+        2560
+      ],
+      "aspect": 1.3394,
+      "ink": "#c6e7fe",
+      "fire": "#e6d8be",
+      "y": 76.0,
+      "focus": "10% 50%",
+      "glow": "dark",
+      "place": "Blackadder, Scotland"
     }
   ]
 }
