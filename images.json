@@ -472,6 +472,22 @@
       "focus": "10% 50%",
       "glow": "dark",
       "place": "Blackadder, Scotland"
+    },
+    {
+      "id": "blackadder-lion-20251029",
+      "alt": "One of the lions backed by golden autumn leaves at Blackadder cottage in the Scottish borders",
+      "base": "img/blackadder-lion-20251029",
+      "widths": [
+        1280,
+        1920
+      ],
+      "aspect": 1.3361,
+      "ink": "#125caf",
+      "fire": "#382307",
+      "y": 3.5,
+      "focus": "55% 50%",
+      "glow": "light",
+      "place": "Blackadder, Scotland"
     }
   ]
 }
